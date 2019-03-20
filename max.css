@@ -1,0 +1,127 @@
+/*Notes for Max*/
+
+/**/
+/*to start, move the css to the right folder
+src --> assets --> main.css (create new folder in src called assets, in that put main.css)
+*/
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Catamaran', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: #ddd;
+}
+
+/*always put transition info on the element itself*/
+a{
+    text-decoration: none;
+    color: #f5c945;
+    -webkit-transition: all 400ms ease-out 400ms;
+    transition: all 400ms ease-out 400ms;
+    -moz-transition: all 400ms ease-out 400ms;
+    -o-transition: all 400ms ease-out 400ms;
+}
+/*what you want it to do on hover goes here: example change color*/
+a:hover{
+    text-decoration:none;
+    color: #EFB933
+}
+/* for anchor tags within a p tag make it purple (more readable)*/
+p > a {
+    color: #89206e;
+}
+/*remove this??*/
+tr:hover{
+}
+
+
+
+
+
+.bodyText{
+     font-size: 22px;
+     padding-left: 15%;
+     padding-right: 15%;
+     margin-top: 2.5%;
+}
+/*again - here I moved the transition info to the element*/
+/*fixed width makes it so the two buttons don't bounce*/
+.button1{
+    border: 1px solid #EFB933;
+    background-color:#f5c945;
+    -webkit-transition: all 400ms ease-out 400ms;
+    transition: all 400ms ease-out 400ms;
+    -moz-transition: all 400ms ease-out 400ms;
+    -o-transition: all 400ms ease-out 400ms;
+    margin: 10px;
+    width: 200px;
+}
+/*do this on hover*/
+.button1:hover{
+   background-color: #EFB933;
+   border: 1px solid #EFB933;
+   letter-spacing: 1px;
+}
+
+/*if you wrap items in a div- then use bootstrap it's a lot less CSS*/
+/*i would get rid of all this absolute positioning*/
+/*wrap elements in a DIV, use ***className="bodyText-center***/
+.logo{
+    position:absolute;
+    top: 22.5%;
+    left: 40%;
+    height: 150px;
+}
+
+/*probably don't need this??*/
+.hashhome{
+    position:absolute;
+    top: 2.5%;
+    left: 8%
+}
+
+/*probably don't need this??*/
+.secondlogo{
+    margin-top: 2.5%;
+    right: 5%
+}
+/*for the buttons on the loading page do them as I did before??*/
+.subButt{
+    margin-left: 5%;
+}
+.tablEx{
+    margin-left: 15%
+}
+.tablEx1{
+    margin-left: 75%
+}
+.topper{
+    margin-top: 5%
+}
+.update{
+    border: 1px solid #EFB933;
+    background-color:#346596
+}
+.update{
+    cursor: pointer;
+   
+}
+
+.zscore{
+    background-color:#89206e;
+    -webkit-transition: all 400ms ease-out 400ms;
+    transition: all 400ms ease-out 400ms;
+    -moz-transition: all 400ms ease-out 400ms;
+    -o-transition: all 400ms ease-out 400ms;
+    
+}
+.zscore:hover{
+    cursor: pointer;
+}
+.header{
+    background-color:#346596;
+    height: 3.5em;
+    padding: 8px;
+}
